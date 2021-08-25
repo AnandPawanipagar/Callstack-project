@@ -11,19 +11,16 @@ function pushElement() {
   }
   console.log(block_name);
   document.getElementById("boxes").innerHTML = block_name;
-  console.log(document.getElementById('name').value)
 }
 
 function popElement() {
- 
-  if(count!=0)
-  {
+  if (count != 0) {
     count--;
   }
-  console.log(count)
-  document.getElementById("boxes").innerHTML = '';
+  console.log(count);
+  document.getElementById("boxes").innerHTML = "";
   var highcount = count;
-  var block_name='';
+  var block_name = "";
   for (var i = 0; i < count; i++) {
     highcount--;
     block_name =
@@ -32,4 +29,3 @@ function popElement() {
   console.log(block_name);
   document.getElementById("boxes").innerHTML = block_name;
 }
-
