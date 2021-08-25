@@ -25,20 +25,22 @@
         z-index: -1;
       }
       .Box {
+        display: flex;
         height: 2em;
         width: 2em;
         background-color: rgb(228, 202, 202);
         border: 1px solid black;
-        /* display: none;*/
       }
     </style>
   </head>
   <body>
     <center>
+      
       <button id="btn-push" onclick="pushElement()">PUSH</button>
       <button id="btn-pop" onclick="popElement()">POP</button>
       <div class="callstack"></div>
       <div id="boxes"></div>
+      <input type="text" id="name"></input>
     </center>
     <script src="./callstack.js"></script>
   </body>
